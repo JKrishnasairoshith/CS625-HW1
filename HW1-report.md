@@ -1,30 +1,38 @@
 # HW 1 - CS 625, Spring 2025
 
-Insert Your Name Here  
+Krishna Sai Roshith J 
 Due: January 26, 2025
 
 ## Git, GitHub
 
 What is the URL of the GitHub repo that you created in your personal account?
-   
+   [https://github.com/JKrishnasairoshith/CS625-HW1](https://github.com/JKrishnasairoshith/CS625-HW1)
+
 What is pull vs clone in GitHub?
-   
+   **Pull**: The `git pull` command is used to fetch the latest changes from a remote repository and merge them into your local repository.
+- **Clone**: The `git clone` command creates a local copy of a remote repository, allowing you to work on it locally.
 You have committed a change on your local machine/remote. However, you want to undo the changes committed. How would you do that?
 
 ## Markdown
 
 Create a bulleted list with at least 3 items
-
+- Study for the exam
+- Complete homework assignments
+- Go to the gym
 Write a single paragraph that demonstrates the use of italics, bold, bold italics, code, and includes a link. The paragraph must explain your favorite Olympic sport/game, the country that won the most number of olympic GOLD medals (Summer) in your favorite sport in 2020 (Japan) and 2024 (France). You are free to include more information.
-
+One of my favorite Olympic sports is **basketball**. The USA has won the most Olympic GOLD medals in basketball in both the 2020 (Japan) and 2024 (France) Olympics. I enjoy watching the exciting moments of the game, especially the **_three-point shots_**. I always think of **Stephen Curry**, a fantastic player who can hit incredible three-pointers. Basketball is such an exciting game! You can check out more details about basketball's Olympic history [here](https://en.wikipedia.org/wiki/Basketball_at_the_Summer_Olympics).
 Create a level 3 heading
-
+### My Favorite Olympic Sport
 Insert a image of your favorite Olympics sport/game, sized appropriately
-
+![Basketball](https://www.example.com/path-to-your-image.jpg)
 ## Tableau
 
 Insert the image of your horizontal bar chart here. Reminder, this should show countries that won the least number of medals only (excluding ZERO) in Paris2024 Summer Olynpics by continent (one country from each continent is ok).
+In Tableau, I created a horizontal bar chart that shows the countries that won the least number of medals in the Paris 2024 Summer Olympics (excluding countries with zero medals). I applied filters to exclude countries with zero medals, sorted the countries in ascending order, and displayed the total medal counts.
 
+Below is the chart showing these countries:
+
+![Paris 2024 Summer Olympics - Least Medal Countries]
 ## Google Colab
 
 What is the URL of your Google Colab notebook? " https://colab.research.google.com/drive/15ihCwqTNwFYZntnNnl7RBEDXEYNKSfYQ "
