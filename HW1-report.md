@@ -51,8 +51,7 @@ Describe what the figure is showing.
 
 
 Insert the second penguin chart here
-
-https://github.com/JKrishnasairoshith/CS625-HW1/blob/main/Penguin%202.png
+![Penguin 2 Image](https://github.com/JKrishnasairoshith/CS625-HW1/blob/main/Penguin%202.png)
 
 Describe what the figure is showing.
 
