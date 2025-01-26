@@ -44,9 +44,15 @@ What is the URL of your Google Colab notebook? " https://colab.research.google.c
 
 Insert the first penguin chart here
 
+![Alt Text](https://github.com/JKrishnasairoshith/CS625-HW1/blob/main/Penguin%201.png)
+
+
 Describe what the figure is showing.
 
+
 Insert the second penguin chart here
+
+https://github.com/JKrishnasairoshith/CS625-HW1/blob/main/Penguin%202.png
 
 Describe what the figure is showing.
 
