@@ -49,13 +49,25 @@ Insert the first penguin chart here
 
 Describe what the figure is showing.
 
+The image above is a scatter plot showing the relationship between **bill length (in mm)** on the x-axis and **bill depth (in mm)** on the y-axis for a set of penguins. From the plot, it appears that there is a positive correlation between the two variables, meaning that as the bill length increases, the bill depth tends to increase as well, although not in a perfect linear manner.
+
+There are several clusters of data points, which might indicate variations across different penguin species, though the species are not explicitly identified in this plot. The background of the plot is light gray, with grid lines that help in reading the values for both axes. The data points are represented as filled circles, and the axes are clearly labeled to show the measurements of bill length and bill depth.
+
+This visualization provides a clear picture of how these two variables are related in the penguin dataset.
 
 Insert the second penguin chart here
 ![Penguin 2 Image](https://github.com/JKrishnasairoshith/CS625-HW1/blob/main/Penguin%202.png)
 
 Describe what the figure is showing.
+The image above is a bar chart showing the body mass (in grams) of penguins across three species: Adelie, Gentoo, and Chinstrap. The chart compares the body mass of male and female penguins within each species. The bars for male penguins are colored in blue, and the bars for female penguins are colored in orange.
+
+From the chart, we can observe that male penguins generally have a higher body mass compared to female penguins across all three species. Among the species, Gentoo penguins have the highest average body mass, followed by Chinstrap and Adelie penguins. The differences between male and female penguins in body mass are more pronounced in some species than others.
+
+This visualization helps highlight the differences in body mass between genders within each species and provides a clear comparison of the sizes of different penguin species.
 
 What happened when you removed the outer parentheses from the code? Why?
+
+If you remove the outer parentheses in the second figure code, the code will no longer run as expected. In Python, parentheses are required to group function calls and method chaining properly
 
 ## Observable and Vega-Lite
 
@@ -86,7 +98,11 @@ This swaps the fields used for the x and y axes.
 
 Insert the bar chart image here
 
+![Alt text](https://github.com/JKrishnasairoshith/CS625-HW1/blob/main/Vega-Lite.png)
+
 Why do you think this chart is the result of this code change?
+
+When I removed the line vl.y().fieldN("Origin") from the Vega-Lite code, the chart no longer grouped the bars by the Origin field. This resulted in the bars being displayed without any distinct categorization based on the origin of the cars. Without the Origin grouping, the y-axis no longer represented separate categories, and the bars might have been presented as a single group or showed a general count of records without any segmentation. This change impacts how the data is visualized, removing the categorical distinction that was originally based on the Origin field.
 
 ## References
 
