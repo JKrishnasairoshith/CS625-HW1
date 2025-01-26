@@ -56,9 +56,28 @@ What happened when you removed the outer parentheses from the code? Why?
 
 What happens when you replace `markCircle()` with `markSquare()`?
 
+When you replace markCircle() with markSquare(), the data points on the scatterplot will change from circles to squares. The shape of the marks will alter, but the data points and the relationships they represent will remain the same. Essentially, this is a visual change, where each point is rendered as a square instead of a circle.
+
+
 What happens when you replace `markCircle()` with `markPoint()`?
 
+markPoint() is typically used for points or individual marks in a scatterplot, similar to markCircle(). The main difference is that markCircle() renders the points as circles, while markPoint() may not explicitly define the shape unless specified. In some cases, markPoint() defaults to the standard point marker shape, which may be a smaller, simpler version of a circle. If no specific shape is set for markPoint(), it may have a different visual appearance from markCircle().
+
 What change do you need to make to swap the x and y axes on the scatterplot?
+
+To swap the x and y axes in a scatterplot, you would need to swap the encoding of the x and y fields in your Vega-Lite specification. For example, if the 
+
+original code has:
+"encoding": {
+  "x": {"field": "fieldX", "type": "quantitative"},
+  "y": {"field": "fieldY", "type": "quantitative"}
+}
+You would change it to:
+"encoding": {
+  "x": {"field": "fieldY", "type": "quantitative"},
+  "y": {"field": "fieldX", "type": "quantitative"}
+}
+This swaps the fields used for the x and y axes.
 
 Insert the bar chart image here
 
