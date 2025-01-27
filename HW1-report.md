@@ -44,6 +44,8 @@ Create a level 3 heading
 ### My Favorite Olympic Sport
 
 Insert a image of your favorite Olympics sport/game, sized appropriately
+
+
 ![Basketball](https://github.com/JKrishnasairoshith/CS625-HW1/blob/main/Basketball.jpeg)
 
 ## Tableau
