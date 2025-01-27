@@ -7,12 +7,27 @@ Due: January 26, 2025
 ## Git, GitHub
 
 What is the URL of the GitHub repo that you created in your personal account?
+
    [https://github.com/JKrishnasairoshith/CS625-HW1](https://github.com/JKrishnasairoshith/CS625-HW1)
 
 What is pull vs clone in GitHub?
 -  **Pull**: The `git pull` command is used to fetch the latest changes from a remote repository and merge them into your local repository.
 - **Clone**: The `git clone` command creates a local copy of a remote repository, allowing you to work on it locally.
 You have committed a change on your local machine/remote. However, you want to undo the changes committed. How would you do that?
+
+To undo a commit on your local machine (before pushing it to the remote):
+
+To keep changes in the working directory:
+
+git reset --soft HEAD~1
+
+To discard the commit and changes:
+
+git reset --hard HEAD~1
+
+If the commit has been pushed to the remote,we will use git revert to create a new commit that undoes the changes:
+
+git revert <commit_id>
 
 ## Markdown
 
@@ -23,16 +38,19 @@ Create a bulleted list with at least 3 items
 
 Write a single paragraph that demonstrates the use of italics, bold, bold italics, code, and includes a link. The paragraph must explain your favorite Olympic sport/game, the country that won the most number of olympic GOLD medals (Summer) in your favorite sport in 2020 (Japan) and 2024 (France). You are free to include more information.
 - One of my favorite Olympic sports is **basketball**. The USA has won the most Olympic GOLD medals in basketball in both the 2020 (Japan) and 2024 (France) Olympics. I enjoy watching the exciting moments of the game, especially the **_three-point shots_**. I always think of **Stephen Curry**, a fantastic player who can hit incredible three-pointers. Basketball is such an exciting game! You can check out more details about basketball's Olympic history [here](https://en.wikipedia.org/wiki/Basketball_at_the_Summer_Olympics).
+
 Create a level 3 heading
 
 ### My Favorite Olympic Sport
 
 Insert a image of your favorite Olympics sport/game, sized appropriately
 ![Basketball](https://github.com/JKrishnasairoshith/CS625-HW1/blob/main/Basketball.jpeg)
+
 ## Tableau
 
 Insert the image of your horizontal bar chart here. Reminder, this should show countries that won the least number of medals only (excluding ZERO) in Paris2024 Summer Olynpics by continent (one country from each continent is ok).
-In Tableau, I created a horizontal bar chart that shows the countries that won the least number of medals in the Paris 2024 Summer Olympics (excluding countries with zero medals). I applied filters to exclude countries with zero medals, sorted the countries in ascending order, and displayed the total medal counts.
+
+In Tableau, In this chart, I have filtered the countries that won the least number of medals in the Paris 2024 Summer Olympics, excluding those with zero medals. The range is set from 10 to 126 medals to focus on countries that have won at least 10 medals. This helps highlight the performance of countries with a more significant number of Olympic achievements, while excluding those with fewer medals. The chart visualizes the countries with the least number of medals within this range.
 
 Below is the chart showing these countries:
 
@@ -60,6 +78,7 @@ Insert the second penguin chart here
 ![Penguin 2 Image](https://github.com/JKrishnasairoshith/CS625-HW1/blob/main/Penguin%202.png)
 
 Describe what the figure is showing.
+
 The image above is a bar chart showing the body mass (in grams) of penguins across three species: Adelie, Gentoo, and Chinstrap. The chart compares the body mass of male and female penguins within each species. The bars for male penguins are colored in blue, and the bars for female penguins are colored in orange.
 
 From the chart, we can observe that male penguins generally have a higher body mass compared to female penguins across all three species. Among the species, Gentoo penguins have the highest average body mass, followed by Chinstrap and Adelie penguins. The differences between male and female penguins in body mass are more pronounced in some species than others.
@@ -86,15 +105,19 @@ What change do you need to make to swap the x and y axes on the scatterplot?
 To swap the x and y axes in a scatterplot, you would need to swap the encoding of the x and y fields in your Vega-Lite specification. For example, if the 
 
 original code has:
+
 "encoding": {
   "x": {"field": "fieldX", "type": "quantitative"},
   "y": {"field": "fieldY", "type": "quantitative"}
 }
+
 You would change it to:
+
 "encoding": {
   "x": {"field": "fieldY", "type": "quantitative"},
   "y": {"field": "fieldX", "type": "quantitative"}
 }
+
 This swaps the fields used for the x and y axes.
 
 Insert the bar chart image here
@@ -103,11 +126,12 @@ Insert the bar chart image here
 
 Why do you think this chart is the result of this code change?
 
-When I removed the line vl.y().fieldN("Origin") from the Vega-Lite code, the chart no longer grouped the bars by the Origin field. This resulted in the bars being displayed without any distinct categorization based on the origin of the cars. Without the Origin grouping, the y-axis no longer represented separate categories, and the bars might have been presented as a single group or showed a general count of records without any segmentation. This change impacts how the data is visualized, removing the categorical distinction that was originally based on the Origin field.
+This bar chart is the result of changing the mark type from `markPoint()` to `markBar()`. The `markBar()` type is used to display data as bars, which is appropriate for comparing discrete categories. The change from point marks to bar marks results in a clear visual representation of the data in the form of bars, each representing a different category.
+
 
 ## References
 
 Every report must list the references (including the URL) that you consulted while completing the assignment. Replace the items below with the references you consulted
 
- Reference 1, <https://www.example.com>
- Reference 2, <https://www.example.com/reallyreallyreally-extra-long-URI/>File 1 content
+ Reference 1, (https://docs.python.org/3/)
+ Reference 2, (https://vega.github.io/vega-lite/docs/)
